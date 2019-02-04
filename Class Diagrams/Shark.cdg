@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Shark">
+  <ClassDiagramComponents>
+    <Class name="Fish" package="OCA.ch05" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="size" type="int" visibility="protected"/>
+        <Field name="age" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAge" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Shark" package="OCA.ch05" visibility="public" xPosition="13.0" yPosition="241.0">
+      <Fields>
+        <Field name="numberOfFins" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="displaySharkDetails" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fins" package="" visibility="public" xPosition="307.0" yPosition="58.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="Properties" package="" visibility="public" xPosition="408.0" yPosition="257.0">
+      <Methods/>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="OCA.ch05.Shark" target="OCA.ch05.Fish"/>
+    <HasRelation name="fin" source="Fins" target="OCA.ch05.Fish" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Fins" target="Properties"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

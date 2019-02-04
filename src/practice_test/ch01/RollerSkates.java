@@ -1,0 +1,13 @@
+package practice_test.ch01;
+
+public class RollerSkates {
+
+    static int wheels = 1;
+    int tracks = 5;
+
+    public static void main(String[] arguments) {
+        RollerSkates s = new RollerSkates();
+        int feet = 4, tracks = 15;
+        System.out.print(feet + tracks + RollerSkates.wheels);
+    }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Chimpanzee">
+  <ClassDiagramComponents>
+    <Class name="Primate" package="OCA.ch05" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Ape" package="OCA.ch05" visibility="public" xPosition="20.0" yPosition="199.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Chimpanzee" package="OCA.ch05" visibility="public" xPosition="5.0" yPosition="386.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="OCA.ch05.Chimpanzee" target="OCA.ch05.Ape"/>
+    <IsRelation name="is" source="OCA.ch05.Ape" target="OCA.ch05.Primate"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
