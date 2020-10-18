@@ -1,22 +1,22 @@
 package OCA.ch05.inheritance;
 
-class Animal2 {
+class Animal {
 
     private int age;
 
-    public Animal2(int age) {
-        super();
+    public Animal(int age) {
+        super(); // Refers to constructor in java.lang.Object
         this.age = age;
     }
 }
 
-public class Zebra extends Animal2 {
+public class Zebra extends Animal {
 
     public Zebra(int age) {
-        super(age);
+        super(age); // Refers to constructor in Animal
     }
 
     public Zebra() {
-        this(4);
+        this(4); // Refers to constructor in Zebra with int argument
     }
 }

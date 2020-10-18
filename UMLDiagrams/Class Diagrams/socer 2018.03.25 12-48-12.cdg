@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="socer">
+  <ClassDiagramComponents>
+    <Class name="Game" package="socer" visibility="public" xPosition="20.0" yPosition="6.0">
+      <Fields>
+        <Field name="homeTeam" type="Team" visibility="public"/>
+        <Field name="awayTeam" type="Team" visibility="public"/>
+        <Field name="theDateTime" type="LocalDateTime" visibility="package"/>
+        <Field name="goals" type="Goal[]" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Team" name="homeTeam"/>
+          <Argument type="Team" name="awayTeam"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Team" name="homeTeam"/>
+          <Argument type="Team" name="awayTeam"/>
+          <Argument type="LocalDateTime" name="theDateTime"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="playGame" returnType="void" visibility="public"/>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Goal" package="socer" visibility="public" xPosition="20.0" yPosition="294.0">
+      <Fields>
+        <Field name="theTeam" type="Team" visibility="private"/>
+        <Field name="thePlayer" type="Player" visibility="private"/>
+        <Field name="theTime" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTheTeam" returnType="Team" visibility="public"/>
+        <Method name="setTheTeam" returnType="void" visibility="public">
+          <Argument type="Team" name="theTeam"/>
+        </Method>
+        <Method name="getThePlayer" returnType="Player" visibility="public"/>
+        <Method name="setThePlayer" returnType="void" visibility="public">
+          <Argument type="Player" name="thePlayer"/>
+        </Method>
+        <Method name="getTheTime" returnType="double" visibility="public"/>
+        <Method name="setTheTime" returnType="void" visibility="public">
+          <Argument type="double" name="theTime"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="League" package="socer" visibility="public" xPosition="623.0" yPosition="6.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="createTeams" returnType="Team[]" visibility="public"/>
+        <Method name="createGames" returnType="Game[]" visibility="public">
+          <Argument type="Team[]" name="theTeams"/>
+        </Method>
+        <Method name="showBestTeam" returnType="void" visibility="public">
+          <Argument type="Team[]" name="theTeams"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Player" package="socer" visibility="public" xPosition="623.0" yPosition="508.0">
+      <Fields>
+        <Field name="playerName" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="playerName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPlayerName" returnType="String" visibility="public"/>
+        <Method name="setPlayerName" returnType="void" visibility="public">
+          <Argument type="String" name="playerName"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Team" package="socer" visibility="public" xPosition="623.0" yPosition="222.0">
+      <Fields>
+        <Field name="teamName" type="String" visibility="private"/>
+        <Field name="playerArray" type="Player[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="teamName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTeamName" returnType="String" visibility="public"/>
+        <Method name="setTeamName" returnType="void" visibility="public">
+          <Argument type="String" name="teamName"/>
+        </Method>
+        <Method name="getPlayerArray" returnType="Player[]" visibility="public"/>
+        <Method name="setPlayerArray" returnType="void" visibility="public">
+          <Argument type="Player[]" name="playerArray"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="awayTeam" source="socer.Game" target="socer.Team" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="socer.League" target="socer.Team" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="homeTeam" source="socer.Game" target="socer.Team" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="socer.Goal" target="socer.Team" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="thePlayer" source="socer.Goal" target="socer.Player" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="socer.Goal" target="socer.Player" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="socer.Team" target="socer.Player" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="theTeam" source="socer.Goal" target="socer.Team" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

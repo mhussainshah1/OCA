@@ -30,7 +30,7 @@ public class NestedLoop {
         }
 
         //Nested While Loop
-        int x = 20;
+        int x = 8;
         while (x > 0) {
             do {
                 x -= 2;

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="shoppingcart">
+  <ClassDiagramComponents>
+    <Class name="ArrayLists" package="shoppingcart" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Arrays" package="shoppingcart" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Constructor" package="shoppingcart" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Customer" package="shoppingcart" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="ssn" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="ssn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getSSN" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DataTypes" package="shoppingcart" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DateTime" package="shoppingcart" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Fields" package="shoppingcart" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IfElse" package="shoppingcart" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inheritance" package="shoppingcart" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Item" package="shoppingcart" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="id" type="int" visibility="public"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="quantity" type="int" visibility="public"/>
+        <Field name="isBackOrdered" type="boolean" visibility="private"/>
+        <Field name="nextId" type="int" visibility="private" isStatic="true"/>
+        <Field name="colorCode" type="char" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="description"/>
+          <Argument type="double" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="display" returnType="void" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="private"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="setColor" returnType="boolean" visibility="public">
+          <Argument type="char" name="colorCode"/>
+        </Method>
+        <Method name="isBackOrdered" returnType="boolean" visibility="public"/>
+        <Method name="setItemFields" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+          <Argument type="int" name="quantity"/>
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="setItemFields" returnType="int" visibility="public">
+          <Argument type="String" name="description"/>
+          <Argument type="int" name="quantity"/>
+          <Argument type="double" name="price"/>
+          <Argument type="char" name="colorCode"/>
+        </Method>
+        <Method name="checkStock" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Loops" package="shoppingcart" visibility="public" xPosition="809.0" yPosition="232.0">
+      <Fields>
+        <Field name="items" type="Item[]" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="displayTotal" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Method" package="shoppingcart" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MethodOverloading" package="shoppingcart" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Order" package="shoppingcart" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="CORP" type="char" visibility="package" isStatic="true" isFinal="true"/>
+        <Field name="PRIVATE" type="char" visibility="package" isStatic="true" isFinal="true"/>
+        <Field name="NONPROFIT" type="char" visibility="package" isStatic="true" isFinal="true"/>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="total" type="double" visibility="package"/>
+        <Field name="stateCode" type="String" visibility="package"/>
+        <Field name="discount" type="double" visibility="package"/>
+        <Field name="custType" type="char" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="double" name="total"/>
+          <Argument type="String" name="stateCode"/>
+          <Argument type="char" name="custType"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDiscount" returnType="String" visibility="public"/>
+        <Method name="calcDiscount" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ParseArgArray" package="shoppingcart" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Polymorphism" package="shoppingcart" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Shirt" package="shoppingcart" visibility="public" xPosition="8.0" yPosition="770.0">
+      <Fields>
+        <Field name="size" type="char" visibility="private"/>
+        <Field name="colorCode" type="char" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="price"/>
+          <Argument type="char" name="size"/>
+          <Argument type="char" name="colorCode"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="display" returnType="void" visibility="public"/>
+        <Method name="getColor" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ShoppingCart" package="shoppingcart" visibility="public" xPosition="320.0" yPosition="922.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Strings" package="shoppingcart" visibility="public" xPosition="641.0" yPosition="922.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestClass" package="shoppingcart" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="shoppingcart.Shirt" target="shoppingcart.Item"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

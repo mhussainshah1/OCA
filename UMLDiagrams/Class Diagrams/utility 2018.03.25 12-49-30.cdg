@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="utility">
+  <ClassDiagramComponents>
+    <Class name="GameUtils" package="utility" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="addGameGoals" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Game" name="currGame"/>
+        </Method>
+        <Method name="getHomeTeam" returnType="Team" visibility="public" isStatic="true">
+          <Argument type="Game" name="currGame"/>
+          <Argument type="String" name="home"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PlayerDatabase" package="utility" visibility="public" xPosition="390.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

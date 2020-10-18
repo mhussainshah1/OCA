@@ -3,7 +3,9 @@ package OCA.ch02;
 public class SearchSample {
 
     public static void main(String[] args) {
-        int[][] list = {{1, 13, 5}, {1, 2, 5}, {2, 7, 2}};
+        int[][] list = {{1, 13, 5}, 
+                        {1, 2, 5}, 
+                        {2, 7, 2}};
         int searchValue = 2;
         int positionX = -1;
         int positionY = -1;
@@ -15,7 +17,7 @@ public class SearchSample {
                     positionX = i;
                     positionY = j;
                     //break PARENT_LOOP;
-                    //break
+                    //break;
                 }
             }
             System.out.println("");

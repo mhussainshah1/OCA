@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="store">
+  <ClassDiagramComponents>
+    <Class name="Clothing" package="store" visibility="public" xPosition="228.0" yPosition="17.0">
+      <Fields>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="size" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId" returnType="void" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public"/>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="getSize" returnType="void" visibility="public"/>
+        <Method name="getColor" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CustomShirt" package="store" visibility="public" xPosition="20.0" yPosition="321.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="doReturn" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Shirt" package="store" visibility="public" xPosition="228.0" yPosition="302.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getFit" returnType="void" visibility="public"/>
+        <Method name="doReturn" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Trouser" package="store" visibility="public" xPosition="439.0" yPosition="283.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getFit" returnType="void" visibility="public"/>
+        <Method name="getGender" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="OutDoors" package="store" visibility="public" xPosition="723.0" yPosition="367.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getId" returnType="void" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public"/>
+        <Method name="getPrice" returnType="void" visibility="public"/>
+        <Method name="getWeight" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tent" package="store" visibility="public" xPosition="511.0" yPosition="568.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getType" returnType="void" visibility="public"/>
+        <Method name="doReturn" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CampStove" package="store" visibility="public" xPosition="723.0" yPosition="683.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="doReturn" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="StoveFuel" package="store" visibility="public" xPosition="908.0" yPosition="587.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="Returnable" package="store" visibility="public" xPosition="113.0" yPosition="579.0">
+      <Methods>
+        <Method name="doReturn" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="store.CampStove" target="store.OutDoors"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="store.Tent" target="store.Returnable"/>
+    <IsRelation name="is" source="store.Shirt" target="store.Clothing"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="store.Shirt" target="store.Returnable"/>
+    <IsRelation name="is" source="store.CustomShirt" target="store.Clothing"/>
+    <IsRelation name="is" source="store.Tent" target="store.OutDoors"/>
+    <IsRelation name="is" source="store.Trouser" target="store.Clothing"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="store.CampStove" target="store.Returnable"/>
+    <IsRelation name="is" source="store.StoveFuel" target="store.OutDoors"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="store.CustomShirt" target="store.Returnable"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
