@@ -1,0 +1,3 @@
+OCA.ch06.MethosThrowException.subclasses.Bunny2
+OCA.ch06.MethosThrowException.subclasses.Hopper2
+OCA.ch06.MethosThrowException.subclasses.CanNotHopException2

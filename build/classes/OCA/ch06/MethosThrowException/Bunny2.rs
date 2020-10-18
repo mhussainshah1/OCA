@@ -1,0 +1,2 @@
+OCA.ch06.MethosThrowException.Bunny2
+OCA.ch06.MethosThrowException.NoMoreCarrotsException2
