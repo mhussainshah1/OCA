@@ -1,2 +1,0 @@
-practice_test.ch08.DragonException
-practice_test.ch08.Lair

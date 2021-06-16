@@ -9,7 +9,7 @@ public class DoSomething {
         } catch (ArithmeticException e) {
             System.out.print("B");
         } finally {
-            System.out.print("C");
+            System.out.println("C");
         }
         System.out.print("D");
     }

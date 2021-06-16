@@ -1,3 +1,0 @@
-practice_test.ch08.KnightAttackingException
-practice_test.ch08.CastleUnderSiegeException
-practice_test.ch08.Citadel

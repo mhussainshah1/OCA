@@ -1,3 +1,0 @@
-practice_test.ch07.Triangle
-practice_test.ch07.IsoscelesRightTriangle
-practice_test.ch07.RightTriangle

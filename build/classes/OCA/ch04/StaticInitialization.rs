@@ -1,2 +1,0 @@
-OCA.ch04.StaticInitialization2
-OCA.ch04.StaticInitialization

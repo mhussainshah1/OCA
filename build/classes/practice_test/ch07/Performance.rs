@@ -1,3 +1,0 @@
-practice_test.ch07.Performance
-practice_test.ch07.SpeakDialogue
-practice_test.ch07.SingMonologue
